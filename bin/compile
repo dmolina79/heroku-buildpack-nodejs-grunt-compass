@@ -57,7 +57,7 @@ cd $build_dir
 
 npm install bower
 echo "-----> Doing bower install thing"
-$build_dir/node_modules/.bin/bower install
+$build_dir/node_modules/.bin/bower install --force
 
 is_gruntfile_present= [ -f $build_dir/grunt.js ] || [ -f $build_dir/Gruntfile.js ] || [ -f $build_dir/Gruntfile.coffee ];
 if $is_gruntfile_present; then
