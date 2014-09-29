@@ -126,7 +126,6 @@ mkdir -p $cache_dir/node
 if test -d $build_dir/node_modules; then
   status "Caching node_modules directory for future builds"
   chmod 700 $build_dir/node_modules/imagemin-gifsicle/node_modules/gifsicle/vendor/gifsicle
-  chmod 700 $build_dir/node_modules/imagemin-gifsicle/node_modules/gifsicle/vendor/jpegtran
   cp -r $build_dir/node_modules $cache_dir/node
 fi
 
