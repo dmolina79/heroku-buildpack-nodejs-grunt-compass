@@ -97,6 +97,8 @@ elif test -d $cache_dir/node/node_modules; then
   fi
 
 fi
+#added to avoid chmod erros in node modules
+chmod -R u+r node_modules
 
 # Scope config var availability only to `npm install`
 (
